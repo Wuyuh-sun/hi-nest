@@ -4,7 +4,11 @@ import { Movie } from './entities/movie.entity';
 
 @Injectable()
 export class MoviesService {
-  private movies: Movie[] = [];
+  private movies: Movie[] = [
+    { id: 213122, title: 'title1', year: 20220303, generes: ['asd', 'asd'] },
+    { id: 156522, title: 'title2', year: 20280912, generes: ['azx', 'das'] },
+    { id: 674122, title: 'title3', year: 20091218, generes: ['zxc', 'xzv'] },
+  ];
 
   getAll(): Movie[] {
     return this.movies;
